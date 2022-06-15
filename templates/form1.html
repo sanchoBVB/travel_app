@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>旅行先決定</title>
+</head>
+<body>
+    <div class="content">
+      <header>
+        <h1>旅行に行こう!!</h1>
+        <img src="../static/img/旅行画像_1.jpg" alt="旅行画像_1" width="50%" height="50%">
+      </header>
+        <form action="/first" method="POST">
+            <h3>あなた方が旅行に行くのは何月ですか？(1~12で答えてください。)</h3>
+            <div class="control">
+                <input type="number" id="season" name="season">
+            </div>
+            <h3>どこから出発?</h3>
+            <input type="radio" id="departure1" name="departure" class="radio-input" value="北海道・東北">北海道・東北<br>
+            <input type="radio" id="departure2" name="departure" class="radio-input" value="関東">関東<br>
+            <input type="radio" id="departure3" name="departure" class="radio-input" value="東海">東海<br>
+            <input type="radio" id="departure4" name="departure" class="radio-input" value="近畿">近畿<br>
+            <input type="radio" id="departure5" name="departure" class="radio-input" value="中国・四国">中国・四国<br>
+            <input type="radio" id="departure6" name="departure" class="radio-input" value="九州・沖縄">九州・沖縄<br>
+            <div class="control">
+                <button type="submit">次へ</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

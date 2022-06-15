@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>旅行先決定</title>
+</head>
+<body>
+    <div class="content">
+      <header>
+        <h1>旅行に行こう!!</h1>
+        <img src="../static/img/旅行画像_1.jpg" alt="旅行画像_1" width="50%" height="50%">
+        <h2>その他の方へ</h2>
+      </header>
+        <form action="/fourth" method="POST">
+            <div>
+                <input type="hidden" id="S" name="S" value={{S}}>
+                <input type="hidden" id="D" name="D" value={{D}}>
+            </div>
+            <h2>~重要度を決定~</h2>
+            <h3>順位をつけてください!!(1~5)</h3>
+            <div class="control">
+                <label for="コスト">コスト</label>
+                <input type="number" id="コスト" name="コスト">
+            </div>
+            <div class="control">
+                <label for="グルメ">グルメ</label>
+                <input type="number" id="グルメ" name="グルメ">
+            </div>
+            <div class="control">
+                <label for="スポット">スポット</label>
+                <input type="number" id="スポット" name="スポット">
+            </div>
+            <div class="control">
+                <label for="宿">宿</label>
+                <input type="number" id="宿" name="宿">
+            </div>
+            <div class="control">
+                <label for="快適さ">快適さ</label>
+                <input type="number" id="快適さ" name="快適さ">
+            </div>
+            <div class="control">
+                <button type="submit">完了</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
