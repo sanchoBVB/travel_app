@@ -344,15 +344,12 @@ def index5():
         result_dict = {it : r_d for it, r_d in zip(item2, result_d)}
         Result = sorted(result_dict.items(), key=lambda x:x[1], reverse=True)
         result1 = Result[0][0]
-        link1 = "https://travel.rakuten.co.jp/mytrip/ranking/spot-"+item2[result1]
         result2 = Result[1][0]
-        link2 = "https://travel.rakuten.co.jp/mytrip/ranking/spot-"+item2[result2]
         result3 = Result[2][0]
-        link3 = "https://travel.rakuten.co.jp/mytrip/ranking/spot-"+item2[result3]
         others = []
         for i in range(3, 13):
             others.append(Result[i][0])
-        return render_template("result.html", S=S, D=D, result1=result1, result2=result2, result3=result3, link1=link1, link2=link2, link3=link3, others=others)
+        return render_template("result.html", S=S, D=D, result1=result1, result2=result2, result3=result3, others=others)
     else:
         return render_template("form6.html")
 
